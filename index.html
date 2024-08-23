@@ -3,236 +3,220 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Betrand Mutagha - Resume</title>
+    <title>Motivational Page</title>
     <style>
       body {
         font-family: Arial, sans-serif;
-        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+        text-align: center;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
       }
-
-      .container {
-        max-width: 800px;
-        margin: 20px auto;
-        background: #fff;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
       }
-
-      h1,
-      h2,
-      h3 {
-        color: #333;
+      header h1 {
+        margin: 0;
       }
-
-      .contact-info,
-      .section {
-        margin-bottom: 20px;
+      .slider {
+        width: 100%;
+        overflow: hidden;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        margin: 20px 0;
       }
-
-      .skills {
+      .slider-text {
+        white-space: nowrap;
+        display: inline-block;
+        animation: slide 10s linear infinite;
+        font-size: 24px;
+        color: #ff6f61;
+      }
+      @keyframes slide {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      ul,
+      ol {
+        text-align: left;
+        display: inline-block;
         margin: 10px 0;
       }
-
-      .skills label {
-        font-weight: bold;
-        margin-right: 10px;
+      form {
+        margin: 20px 0;
       }
-
-      .skills .skill {
-        margin: 5px 0;
+      form label {
+        display: block;
+        margin: 10px 0;
       }
-
-      .skill-bar {
-        background-color: #e4e4e4;
-        border-radius: 5px;
-        overflow: hidden;
-        margin: 5px 0;
+      form input[type="text"],
+      form input[type="password"],
+      form input[type="range"],
+      form select {
+        padding: 10px;
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+        display: block;
+        font-size: 1em;
       }
-
-      .skill-bar div {
-        height: 20px;
-        background-color: #4caf50;
-        text-align: right;
-        padding-right: 10px;
-        line-height: 20px;
+      form button,
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #ff6f61;
         color: white;
-        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+      }
+      form button:hover,
+      input[type="submit"]:hover {
+        background-color: #e55b51;
+      }
+      img {
+        width: 300px;
+        height: auto;
+        margin: 20px 0;
+      }
+      video {
+        width: 80%;
+        max-width: 600px;
+        margin: 20px 0;
+      }
+      a {
+        color: #ff6f61;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
-
   <body>
-    <div class="container">
-      <h1>Betrand Mutagha</h1>
-      <p class="contact-info">
-        Cleveland, OH 44130 ◆ 240-298-1823 ◆
-        <a href="mailto:ngohbm@gmail.com">ngohbm@gmail.com</a>
-      </p>
+    <header>
+      <h1>Welcome to Your Daily Dose of Motivation</h1>
+    </header>
 
-      <div class="section">
-        <h2>Professional Summary</h2>
-        <p>
-          Experienced Cloud and DevOps Engineer with years of hands-on
-          experience in the IT industry, specializing in DevOps and Cloud
-          technologies. Proven track record of success at leading companies,
-          including Walmart and Apple, where I leveraged my skills to drive
-          efficiency, automate processes, and optimize workflows. Passionate
-          about helping businesses achieve their goals through innovative
-          technology solutions. Seeking a challenging role in DevOps and Cloud
-          engineering to contribute my expertise and drive continuous
-          improvement.
-        </p>
-      </div>
-
-      <div class="section">
-        <h2>Skills</h2>
-        <div class="skills">
-          <div class="skill">
-            <label>Cloud Platforms (AWS, Azure):</label>
-            <div class="skill-bar">
-              <div style="width: 90%">90%</div>
-            </div>
-          </div>
-          <div class="skill">
-            <label>Ansible, Jenkins, GitHub Actions:</label>
-            <div class="skill-bar">
-              <div style="width: 85%">85%</div>
-            </div>
-          </div>
-          <div class="skill">
-            <label>Docker, Kubernetes:</label>
-            <div class="skill-bar">
-              <div style="width: 95%">95%</div>
-            </div>
-          </div>
-          <div class="skill">
-            <label>Terraform, Terraform Cloud:</label>
-            <div class="skill-bar">
-              <div style="width: 90%">90%</div>
-            </div>
-          </div>
-          <div class="skill">
-            <label>Scripting (Java, Python, Shell):</label>
-            <div class="skill-bar">
-              <div style="width: 80%">80%</div>
-            </div>
-          </div>
-          <div class="skill">
-            <label>CI/CD Pipelines:</label>
-            <div class="skill-bar">
-              <div style="width: 85%">85%</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Work History</h2>
-        <h3>Senior DevOps Engineer, 12/2020 - Current</h3>
-        <p>Apple Inc. – United States</p>
-        <ul>
-          <li>
-            Strong Docker and Kubernetes administration and deployment
-            experience, focusing on containerization and orchestration of
-            microservices.
-          </li>
-          <li>
-            Proficient in using Maven and understanding POM files for library
-            control.
-          </li>
-          <li>
-            Experience in creating and managing Jenkins pipelines using
-            Jenkinsfiles and GitHub Action Workflow files.
-          </li>
-          <li>Hands-on experience with AWS and Azure.</li>
-          <li>
-            Strong expertise in Linux systems administration, including various
-            Linux distributions and their nuances.
-          </li>
-          <li>
-            Successfully managed and improved infrastructure and deployment
-            processes, leading to enhanced system reliability.
-          </li>
-          <li>
-            Implemented Kubernetes for container orchestration, optimizing
-            resource utilization.
-          </li>
-          <li>
-            Utilized Ansible for automation, reducing manual intervention and
-            increasing operational efficiency.
-          </li>
-          <li>
-            Leveraged Amazon Web Services (AWS) to architect scalable and secure
-            cloud solutions.
-          </li>
-          <li>
-            Implemented CI/CD pipelines with Jenkins and GitHub Actions,
-            streamlining the software development lifecycle.
-          </li>
-          <li>
-            Proficiently used Terraform for infrastructure as code (IaC) to
-            ensure consistent and repeatable deployments.
-          </li>
-          <li>
-            Collaborated with cross-functional teams and followed Agile/Scrum
-            methodologies to deliver projects on time.
-          </li>
-          <li>
-            Orchestrated GitOps practices by leveraging ArgoCD, ensuring
-            version-controlled, automated deployments.
-          </li>
-        </ul>
-
-        <h3>Cloud DevOps Engineer, 06/2017 - 11/2020</h3>
-        <p>Walmart – United States</p>
-        <ul>
-          <li>
-            Played a pivotal role in establishing AWS cloud infrastructure,
-            including VPCs and routing configurations.
-          </li>
-          <li>
-            Implemented containerization using Docker and container
-            orchestration with Kubernetes.
-          </li>
-          <li>
-            Developed automation scripts in Python and Shell to streamline
-            various operational tasks.
-          </li>
-          <li>
-            Proficiently used Terraform and Terraform Cloud for infrastructure
-            as code (IaC) to ensure consistent and repeatable deployments.
-          </li>
-          <li>
-            Ensured security compliance by managing IAM and conducting
-            vulnerability assessments.
-          </li>
-          <li>
-            Monitored systems with Prometheus and shared knowledge through
-            effective documentation.
-          </li>
-          <li>
-            Led and managed teams, demonstrating leadership skills and fostering
-            a culture of continuous learning.
-          </li>
-          <li>
-            Implemented and managed Kubernetes clusters with Rancher, optimizing
-            containerized environments for streamlined development workflows.
-          </li>
-          <li>
-            Leveraged Azure DevOps to streamline development workflows, ensuring
-            efficient collaboration between development, testing, and operations
-            teams.
-          </li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2>Education</h2>
-        <p>Bachelor's Degree in Computer Science, Presbyterian University</p>
+    <!-- Moving content displaying the Five Pillars of Mamba Mentality -->
+    <div class="slider">
+      <div class="slider-text">
+        The Five Pillars of Mamba Mentality: Relentless Focus, Fearlessness,
+        Resilience, Obsession, Passion.
       </div>
     </div>
+
+    <!-- Motivational Quotes -->
+    <section>
+      <h1>Consistency</h1>
+      <h1>Hard Work</h1>
+      <h1>Never Give Up</h1>
+      <h1><strong>Do Not Settle for Less</strong></h1>
+      <h1><b>Be Fearless</b></h1>
+      <h1><em>It's a Must</em></h1>
+      <h2><sub>22nd August 2024</sub></h2>
+    </section>
+
+    <!-- Motivational Thoughts and Personal Mantra -->
+    <section>
+      <h2>Motivational Thoughts:</h2>
+      <ul>
+        <li>
+          “Success is not final; failure is not fatal: It is the courage to
+          continue that counts.”
+        </li>
+        <li>
+          “Dream big, work hard, stay focused, and surround yourself with good
+          people.”
+        </li>
+        <li>“Your limitation—it’s only your imagination.”</li>
+      </ul>
+
+      <h2>Personal Mantra:</h2>
+      <ol>
+        <li>Mutagha Betrand: "Strive for progress, not perfection."</li>
+      </ol>
+    </section>
+
+    <!-- Links -->
+    <section>
+      <h2>Links:</h2>
+      <p>
+        <a href="https://betrandmutagha.com/">Link to My Website</a>
+      </p>
+      <p>
+        <a href="2.index.html">Link to my content</a>
+      </p>
+      <p>
+        <a href="mailto:mmutagha@gmail.com">Email: mmutagha@gmail.com</a>
+      </p>
+      <p>
+        <a href="tel:+2402981823">Phone: +2402981823</a>
+      </p>
+    </section>
+
+    <!-- Image Section -->
+    <section>
+      <h1>
+        <img src="photo.jpg" alt="Motivational Image" />
+      </h1>
+    </section>
+
+    <!-- Login Form -->
+    <section>
+      <h2>Login</h2>
+      <form action="Login ">
+        <label>
+          Username:
+          <input type="text" placeholder="Username" />
+        </label>
+        <label>
+          Password:
+          <input type="password" placeholder="Password" />
+        </label>
+        <label>
+          Remember Me:
+          <input type="checkbox" />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- IT Level Form -->
+    <section>
+      <h2>What is Your Level in IT?</h2>
+      <form>
+        <label for="it-level">Select your level:</label>
+        <select id="it-level" name="it-level">
+          <option value="beginner">Beginner</option>
+          <option value="average">Average</option>
+          <option value="expert">Expert</option>
+        </select>
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+
+    <!-- Motivation Level Range -->
+    <section>
+      <h2>Rate Your Motivation</h2>
+      <label>
+        Motivation Level:
+        <input type="range" min="0" max="5" />
+      </label>
+      <button>Enter</button>
+    </section>
+
+    <!-- Video Section -->
+    <section>
+      <h2>Video</h2>
+      <video src="video.mp4" controls></video>
+    </section>
   </body>
 </html>
