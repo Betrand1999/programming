@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>app</title>
+    <title>App and Media Example</title>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Your App Title" />
@@ -25,38 +25,53 @@
     <meta name="twitter:image" content="https://yourwebsite.com/photo.jpg" />
   </head>
   <body>
-    <h1>Hello Mr Adomah Richard How are you doing this morning</h1>
-    <img src="photo.jpg" alt="" />
+    <section>
+      <h1>Hello Mr Adomah Richard, How are you doing this morning?</h1>
+      <img src="photo.jpg" alt="Photo of Mr Adomah Richard" />
 
-    <form action="login myaccount">
-      <label>
-        username:
-        <input type="text" placeholder="enter username" />
-      </label>
-      <label>
-        password:
-        <input type="password" placeholder="enter password" />
-      </label>
-      <label>
-        checkbox:
-        <input type="checkbox" placeholder="checkbox" />
-      </label>
-      <label>
-        range:
-        <input type="range" min="0" max="5" />
-      </label>
-      <button>enter</button>
-    </form>
+      <form action="login_myaccount">
+        <label>
+          Username:
+          <input type="text" placeholder="Enter username" />
+        </label>
+        <br />
+        <label>
+          Password:
+          <input type="password" placeholder="Enter password" />
+        </label>
+        <br />
+        <label>
+          Remember Me:
+          <input type="checkbox" />
+        </label>
+        <br />
+        <label>
+          Rate your experience:
+          <input type="range" min="0" max="5" />
+        </label>
+        <br />
+        <button type="submit">Enter</button>
+      </form>
 
-    <form action="">
-      <label for="skill">Choose your skill level:</label>
-      <select name="Skill" id="skill">
-        <option value="beginner">Level 1 - Beginner</option>
-        <option value="intermediate">Level 2 - Intermediate</option>
-        <option value="advanced">Level 3 - Advanced</option>
-      </select>
-      <button type="submit">Submit</button>
-    </form>
+      <form action="">
+        <label for="skill">Choose your skill level:</label>
+        <select name="Skill" id="skill">
+          <option value="beginner">Level 1 - Beginner</option>
+          <option value="intermediate">Level 2 - Intermediate</option>
+          <option value="advanced">Level 3 - Advanced</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section>
+      <h1>Audio and Video</h1>
+      <audio src="t-rex-roar.mp3" controls loop></audio>
+
+      <h2>Sample Video</h2>
+      <video src="video.mp4" controls></video>
+    </section>
+
     <h1>Happy Learning</h1>
   </body>
 </html>
