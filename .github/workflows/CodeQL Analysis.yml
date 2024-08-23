@@ -4,10 +4,9 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    # The branches below must be a subset of the branches above
     branches: [ "main" ]
   schedule:
-    - cron: '0 0 * * 1'  # Run weekly
+    - cron: '0 0 * * 1'  # Runs weekly on Monday at midnight
 
 jobs:
   analyze:
@@ -21,10 +20,34 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
       with:
-        languages: 'javascript, python'  # Specify your project languages
+        languages: 'javascript, python, html'  # Add other languages if needed
 
     - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
+      run: |
+        if [ -f build.gradle ]; then
+          ./gradlew build -x test
+        elif [ -f pom.xml ]; then
+          mvn -B package --file pom.xml
+        elif [ -f package.json ]; then
+          npm install
+        fi
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
+
+    - name: Build CodeQL Database for HTML
+      run: |
+        codeql database create /home/runner/work/_temp/codeql_databases/html --language=html --source-root=./  # Adjust the path if your HTML files are in a specific directory
+
+    - name: Finalize CodeQL Database for HTML
+      run: |
+        codeql database finalize --finalize-dataset --threads=4 --ram=14567 /home/runner/work/_temp/codeql_databases/html
+
+    - name: Analyze HTML Code with CodeQL
+      run: |
+        codeql database analyze /home/runner/work/_temp/codeql_databases/html --format=sarif-latest --output=results.sarif
+
+    - name: Upload Code Scanning Results
+      uses: github/codeql-action/upload-sarif@v2
+      with:
+        sarif_file: results.sarif
