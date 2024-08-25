@@ -3,251 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Motivational Page</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        color: #333;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        background-color: #333;
-        color: white;
-        padding: 10px 0;
-      }
-      header h1 {
-        margin: 0;
-      }
-      .slider {
-        width: 100%;
-        overflow: hidden;
-        background-color: #333;
-        color: white;
-        padding: 10px;
-        margin: 20px 0;
-      }
-      .slider-text {
-        white-space: nowrap;
-        display: inline-block;
-        animation: slide 10s linear infinite;
-        font-size: 24px;
-        color: #ff6f61;
-      }
-      @keyframes slide {
-        0% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-      ul,
-      ol {
-        text-align: left;
-        display: inline-block;
-        margin: 10px 0;
-      }
-      form {
-        margin: 20px 0;
-      }
-      form label {
-        display: block;
-        margin: 10px 0;
-      }
-      form input[type="text"],
-      form input[type="password"],
-      form input[type="range"],
-      form select {
-        padding: 10px;
-        width: 100%;
-        max-width: 300px;
-        margin: 10px auto;
-        display: block;
-        font-size: 1em;
-      }
-      form button,
-      input[type="submit"] {
-        padding: 10px 20px;
-        background-color: #ff6f61;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-size: 1em;
-      }
-      form button:hover,
-      input[type="submit"]:hover {
-        background-color: #e55b51;
-      }
-      img {
-        width: 300px;
-        height: auto;
-        margin: 20px 0;
-      }
-      video {
-        width: 80%;
-        max-width: 600px;
-        margin: 20px 0;
-      }
-      a {
-        color: #ff6f61;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
+    <title>Simple Phone Store</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <h1>Welcome to Your Daily Dose of Motivation</h1>
+      <h1>Welcome to Simple Phone Store</h1>
     </header>
 
-    <!-- Moving content displaying the Five Pillars of Mamba Mentality -->
-    <div class="slider">
-      <div class="slider-text">
-        The Five Pillars of Mamba Mentality: Relentless Focus, Fearlessness,
-        Resilience, Obsession, Passion.
-      </div>
-    </div>
-
-    <!-- Motivational Quotes -->
-    <section>
-      <h1>Consistency</h1>
-      <h1>Hard Work</h1>
-      <h1>Never Give Up</h1>
-      <h1><strong>Do Not Settle for Less</strong></h1>
-      <h1><b>Be Fearless</b></h1>
-      <h1><em>It's a Must</em></h1>
-      <h2><sub>22nd August 2024</sub></h2>
+    <section class="product">
+      <img src="images/Iphone15.jpg" alt="Phone 1" />
+      <h2>Phone Model 1</h2>
+      <p>$499.99</p>
     </section>
 
-    <!-- Motivational Thoughts and Personal Mantra -->
-    <section>
-      <h2>Motivational Thoughts:</h2>
-      <ul>
-        <li>
-          “Success is not final; failure is not fatal: It is the courage to
-          continue that counts.”
-        </li>
-        <li>
-          “Dream big, work hard, stay focused, and surround yourself with good
-          people.”
-        </li>
-        <li>“Your limitation—it’s only your imagination.”</li>
-      </ul>
-
-      <h2>Personal Mantra:</h2>
-      <ol>
-        <li>Mutagha Betrand: "Strive for progress, not perfection."</li>
-      </ol>
+    <section class="product">
+      <img src="images/Iphone14.jpg" alt="Phone 2" />
+      <h2>Phone Model 2</h2>
+      <p>$399.99</p>
     </section>
-
-    <!-- Links -->
-    <section>
-      <h2>Links:</h2>
-      <p>
-        <a href="https://betrandmutagha.com/">Link to My Website</a>
-      </p>
-      <p>
-        <a href="2.index.html">Link to my content</a>
-      </p>
-      <p>
-        <a href="mailto:mmutagha@gmail.com">Email: mmutagha@gmail.com</a>
-      </p>
-      <p>
-        <a href="tel:+2402981823">Phone: +2402981823</a>
-      </p>
-    </section>
-
-    <!-- Image Section -->
-    <section>
+    <section id="b">
       <h1>
-        <img src="photo.jpg" alt="Motivational Image" />
+        <a href="phone:+2402981823">Phone: +2402981823</a>
       </h1>
     </section>
-
-    <!-- Login Form -->
-    <section>
-      <h2>Login</h2>
-      <form action="Login ">
-        <label>
-          Username:
-          <input type="text" placeholder="Username" />
-        </label>
-        <label>
-          Password:
-          <input type="password" placeholder="Password" />
-        </label>
-        <label>
-          Remember Me:
-          <input type="checkbox" />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
+    <section id="a">
+      <h1>
+        <a href="mailto:mmutagha@gmail.com">Email: mmutagha@gmail.com</a>
+      </h1>
+      <h1></h1>
     </section>
-
-    <!-- IT Level Form -->
-    <section>
-      <h2>What is Your Level in IT?</h2>
-      <form>
-        <label for="it-level">Select your level:</label>
-        <select id="it-level" name="it-level">
-          <option value="beginner">Beginner</option>
-          <option value="average">Average</option>
-          <option value="expert">Expert</option>
-        </select>
-        <input type="submit" value="Submit" />
-      </form>
-    </section>
-
-    <!-- Motivation Level Range -->
-    <section>
-      <h2>Rate Your Motivation</h2>
-      <label>
-        Motivation Level:
-        <input type="range" min="0" max="5" />
-      </label>
-      <button>Enter</button>
-    </section>
-
-    <!-- Video Section -->
-    <section>
-      <h2>Video</h2>
-      <video src="video.mp4" controls></video>
-    </section>
-    <style>
-      .green {
-        background: green;
-      }
-      .red {
-        background: red;
-      }
-      .yellow {
-        background: yellow;
-      }
-    </style>
-    <h1>The color of Cameroon mother fucker flag</h1>
-    <div class="green">
-      <h2>Green</h2>
-    </div>
-
-    <div class="red">
-      <h2>Red</h2>
-    </div>
-    <div class="yellow">
-      <h2>Yellow</h2>
-    </div>
-    <style>
-      article {
-        background: green;
-      }
-    </style>
-    <h1>Love Green</h1>
-    <article>Green</article>
-    <article>Green</article>
-    <article>Green</article>
   </body>
 </html>
