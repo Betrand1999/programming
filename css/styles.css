@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: green;
+  background: green !important; /* Ensure the green background is applied */
   text-align: center;
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ header {
   border: 1px solid #ccc;
   display: inline-block;
   width: 300px;
-  background-color: transparent; /* Change from white to transparent to allow green background */
+  background-color: transparent; /* Ensure background is transparent */
 }
 
 .product img {
@@ -41,11 +41,4 @@ header {
 
 #b {
   background: #ff6f61;
-}
-body {
-  background: green;
-}
-
-body {
-  background: green !important;
 }
