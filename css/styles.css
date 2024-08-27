@@ -50,3 +50,6 @@ body {
     center center fixed;
   background-size: cover;
 } */
+body {
+  background: green !important;
+}
