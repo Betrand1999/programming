@@ -45,3 +45,8 @@ header {
 body {
   background: green;
 }
+body {
+  background: url("../images/820c981247cc8be38e2bc3c433fc77f4.jpg") no-repeat
+    center center fixed;
+  background-size: cover;
+}
