@@ -1,7 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: green; /* This sets the entire background to green */
-  color: #333;
+  /* background: green; */
   text-align: center;
   margin: 0;
   padding: 0;
@@ -43,7 +42,6 @@ header {
 #b {
   background: #ff6f61;
 }
-
 body {
   background: green;
 }
