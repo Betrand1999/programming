@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  /* background: green; */
+  background: green;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -45,11 +45,7 @@ header {
 body {
   background: green;
 }
-/* body {
-  background: url("../images/820c981247cc8be38e2bc3c433fc77f4.jpg") no-repeat
-    center center fixed;
-  background-size: cover;
-} */
+
 body {
   background: green !important;
 }
