@@ -1,0 +1,26 @@
+version: 2
+updates:
+  # Example configuration for npm dependencies
+  - package-ecosystem: "npm" # Can be npm, pip, maven, gradle, etc.
+    directory: "/" # Location in the repository
+    schedule:
+      interval: "weekly" # Can be daily, weekly, or monthly
+    commit-message:
+      prefix: "chore" # Prefix for pull request commit messages
+    open-pull-requests-limit: 5 # Limit the number of open PRs
+    reviewers:
+      - your-github-username # Automatically add reviewers to PRs
+    assignees:
+      - your-github-username # Automatically assign someone to PRs
+    ignore:
+      - dependency-name: "lodash" # Dependencies to ignore
+        versions: ["4.17.15"] # Specific versions to ignore
+
+  # Example configuration for Python dependencies
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "update"
+    open-pull-requests-limit: 3
