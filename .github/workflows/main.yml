@@ -1,0 +1,21 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: myapp # Specify your self-hosted runner label here
+
+    container:
+      image: betrand1997/myapp:latest # Your custom Docker image
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the site in the jekyll/builder container
+        run: |
+          chmod -R 777 /srv/jekyll
+          jekyll build --future
