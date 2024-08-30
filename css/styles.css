@@ -1,3 +1,11 @@
+.background {
+  width: 100%; /* Ensures the div spans the full width */
+  height: 100vh; /* Ensures the div spans the full height of the viewport */
+  background: url("../images/dahlia-red-blossom-bloom-60597.webp") no-repeat
+    center center;
+  background-size: cover; /* Ensures the image covers the entire div */
+}
+
 body {
   font-family: Arial, sans-serif;
   background: green !important; /* Ensure the green background is applied */
