@@ -42,11 +42,23 @@ header {
   font-size: 1.2em;
   color: #ff6f61;
 }
-
 #a {
-  background: green;
+  background: #ff6f61;
+}
+#b {
+  background: rgb(6, 157, 6);
+}
+.animation {
+  position: relative;
+  font-size: 24px;
+  animation: moveLeftRight 3s infinite alternate;
 }
 
-#b {
-  background: #ff6f61;
+@keyframes moveLeftRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100px;
+  }
 }
