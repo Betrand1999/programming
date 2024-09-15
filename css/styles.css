@@ -8,7 +8,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: green !important; /* Ensure the green background is applied */
+  background: dimgrey;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -61,4 +61,53 @@ header {
   100% {
     left: 100px;
   }
+}
+
+/* <!-- adiing code 4 --> */
+.container {
+  display: flex; /* This enables Flexbox on the container */
+  justify-content: space-around; /* Distributes space around the flex items */
+  align-items: center; /* Aligns items vertically in the center */
+  height: 200px; /* Sets the height of the container */
+  background-color: #f0f0f0; /* Light grey background for the container */
+}
+
+.box {
+  background-color: #4caf50; /* Green background for the boxes */
+  color: white; /* White text color */
+  padding: 20px; /* Padding inside each box */
+  text-align: center; /* Center the text inside each box */
+  border-radius: 5px; /* Rounded corners for the boxes */
+}
+
+/* adding review */
+.review-section {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background to distinguish the review section */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 20px; /* Space above the section */
+  text-align: center; /* Center the text */
+}
+
+.review {
+  max-width: 600px; /* Maximum width for readability */
+  margin: 0 auto; /* Center align the review */
+  padding: 10px; /* Padding inside the review box */
+  border: 1px solid #ddd; /* Light border around the review */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.review-text {
+  font-style: italic; /* Italicize the review text */
+  margin-bottom: 10px; /* Space between text and stars */
+}
+
+.star-rating {
+  color: #ffd700; /* Gold color for the stars */
+  font-size: 20px; /* Size of the stars */
+}
+
+.reviewer-name {
+  margin-top: 10px; /* Space above the reviewer's name */
+  color: #555; /* Subtle color for the name */
 }
