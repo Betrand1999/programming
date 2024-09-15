@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Example</title>
+    <style>
+      /* CSS styling */
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      #text {
+        padding: 20px;
+        border: 1px solid #ddd;
+        display: inline-block;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #4caf50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background-color: #45a049; /* Darker green */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Change Background Color</h1>
+    <p id="text">Click the button to change my background color!</p>
+    <button onclick="changeColor()">Change Color</button>
+    <!-- Button triggers JavaScript function -->
+
+    <script>
+      // JavaScript functionality
+      function changeColor() {
+        const textElement = document.getElementById("text");
+        // Randomly change background color
+        textElement.style.backgroundColor = getRandomColor();
+      }
+
+      function getRandomColor() {
+        const letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+    </script>
+  </body>
+</html>
