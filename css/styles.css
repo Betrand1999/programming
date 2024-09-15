@@ -1,8 +1,6 @@
 .background {
   width: 100%; /* Ensures the div spans the full width */
   height: 100vh; /* Ensures the div spans the full height of the viewport */
-  background: url("../images/dahlia-red-blossom-bloom-60597.webp") no-repeat
-    center center;
   background-size: cover; /* Ensures the image covers the entire div */
 }
 
@@ -46,7 +44,7 @@ header {
   background: #ff6f61;
 }
 #b {
-  background: rgb(6, 157, 6);
+  background: #16a616;
 }
 .animation {
   position: relative;
