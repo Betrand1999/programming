@@ -109,3 +109,50 @@ header {
   margin-top: 10px; /* Space above the reviewer's name */
   color: #555; /* Subtle color for the name */
 }
+
+.grid-container {
+  padding: 40px;
+  display: grid; /* Defines this element as a grid container */
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 10px; /* Adds space between grid items */
+}
+
+.grid-item1 {
+  background-color: green;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.grid-item2 {
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.grid-item3 {
+  background-color: yellow;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.grid-item4 {
+  background-color: yellow;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.grid-item5 {
+  background-color: green;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.grid-item6 {
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}

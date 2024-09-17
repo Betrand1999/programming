@@ -1,15 +1,46 @@
-.container {
-  display: flex; /* This enables Flexbox on the container */
-  justify-content: space-around; /* Distributes space around the flex items */
-  align-items: center; /* Aligns items vertically in the center */
-  height: 200px; /* Sets the height of the container */
-  background-color: #f0f0f0; /* Light grey background for the container */
+.grid-container {
+  padding: 40px;
+  display: grid; /* Defines this element as a grid container */
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 10px; /* Adds space between grid items */
 }
 
-.box {
-  background-color: #4caf50; /* Green background for the boxes */
-  color: white; /* White text color */
-  padding: 20px; /* Padding inside each box */
-  text-align: center; /* Center the text inside each box */
-  border-radius: 5px; /* Rounded corners for the boxes */
+.grid-item1 {
+  background-color: green;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.grid-item2 {
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.grid-item3 {
+  background-color: yellow;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.grid-item4 {
+  background-color: yellow;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.grid-item5 {
+  background-color: green;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.grid-item6 {
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
 }
